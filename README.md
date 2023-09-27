@@ -50,7 +50,7 @@ SatSale can talk to your own Bitcoin node, and **verify payments with your own c
 Clone and install dependencies
 
 ```
-git clone https://github.com/nickfarrow/SatSale
+git clone https://github.com/Bitcoin-Expert/SatSale
 cd SatSale/
 pip3 install -r requirements.txt
 ```
