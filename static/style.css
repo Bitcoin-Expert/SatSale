@@ -1,0 +1,151 @@
+:root {
+    --preset--font--family: "Lucida Console", "Courier New", monospace;
+    --preset--html--background: #fff;
+    --preset--primary--background: #f7931a;
+    --preset--primary--font--color: #000;
+    --preset--secondary--font--color: #fff;
+}
+
+html, body {
+    display: flex;
+    background-color: var(--preset--html--background);
+}
+
+body {
+    /* Background color */
+    background-color: inherit;
+    overflow: hidden;
+    font-family: var(--preset--font--family)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--preset--primary--font--color);
+}
+
+#paybox {
+    /* SatSale Box color */
+    background-color: var(--preset--primary--background);
+    /* Rounded Corners */
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    height: 275px;
+    width:360px;
+
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Centering */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Dynamic size on mobile and tablet */
+/* Smartphones */
+@media only screen and (min-width : 0px) and (max-width : 700px){
+    #paybox {
+        width: 80%;
+        height: auto;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 700px){
+    #paybox {
+        width: 360px;
+        height: auto;
+    }
+}
+
+/* Text style (addresses) */
+p {
+    color: var(--preset--primary--font--color);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 5px;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2em;
+}
+
+.button {
+    /* Button color then font and font color etc.. */
+    background-color: black;
+    font-family: var(--preset--font--family);
+    border: none;
+    border-radius: 12px;
+    color: var(--preset--secondary--font--color);
+
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.logo {
+    padding-top:10px;
+    padding-left:30px;
+    float:right;
+}
+
+.qr {
+    transition: transform .2s;
+    object-fit: cover;
+}
+.qr:hover {
+    -ms-transform: scale(2.5); /* IE 9 */
+    -webkit-transform: scale(2.5); /* Safari 3-8 */
+    transform: scale(3) translate(-25px, 21px);
+}
+
+.donate_input {
+    background-color: black;
+    color: var(--preset--secondary--font--color);
+    font-size: 16px;
+    border-radius:5px;
+    display: inline;
+}
+
+#qrImage {
+    float: right;
+    margin: auto;
+    padding-right:15px;
+    padding-top:25px;
+}
+
+#row {
+    display: flex;
+}
+#left {
+    width: 60%;
+    padding: 0 0 0 0;
+    float: left;
+}
+#right {
+    width: 40%;
+    padding: 0 0 0 0;
+    float: right;
+}
+#address {
+    overflow-wrap: break-word;
+    text-align: right;
+}
+#about {
+    color: var(--preset--primary--font--color);
+}

@@ -1,0 +1,12 @@
+*.macaroon
+*.cert
+config.py
+config.toml
+*.toml
+__pycache__/
+gateways/__pycache__/
+invoice/__pycache__/
+pay/__pycache__/
+SatSale_API_key
+.venv/
+database.db
